@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Hurricane&family=Inspiration&family=Junge&family=Smooch+Sans:wght@300;400&display=swap');
+@import "./reset.scss";
+@import "./variables.scss";
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("../img/header/headerBackground.png");
+    background-position: center center;
+    height: 200px;
+    @media (max-width: 768px) {
+        justify-content: start;
+    }
+    @media (max-width: 615px) {
+        justify-content: center;
+        height: fit-content;
+    }
+    @media (max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    div img  {
+        border-radius: 10%;
+        animation-name: fadein;
+        animation-duration: 2s;
+        height: 180px;
+        @keyframes fadein {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    }
+    div:nth-child(2) {
+        @media (max-width: 615px) {
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: start !important;
+        }
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        padding: 10px;
+        animation-name: fadein;
+        animation-duration: 2s;
+        height: fit-content;
+    }
+    li {
+        padding: 0px 30px 0px 30px;
+        @media (max-width: 615px) {
+            min-width: 200px;
+            padding: 0;
+        }
+        &:hover #submenu  {
+            display: flex;
+            flex-direction: column;
+            animation-name: fadein;
+            animation-duration: 2s;
+            border-left: 1px solid $colorGreen;
+
+            
+        }
+
+        div {
+            display: none;
+            a {
+                padding: 10px;
+            }
+        }
+        
+    }
+    
+    a {
+        color: $colorSecundario;
+        font-family: $fontPrimaria;
+        font-size: 2rem;
+
+        &:hover {
+            border-bottom: 1px solid $colorGreen;
+        }
+    }
+}
+.burgerBtn {
+    display: none;
+    @media (max-width: 615px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    color: $colorGrey;
+    font-size: 1.5rem;
+    background-image: url("../img/header/wood2.jpg");
+}
+}
+.showMenu {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    transition: 3s;
+}
+@media (max-width: 615px){
+.hideMenu {
+    display: none;
+}
+}
+
+main {
+    background-color: $colorBrownWood;
+}
+.carouselHeight {
+    height: 370px;
+}
+
+footer {
+    background-color: $colorGreen;
+}
+

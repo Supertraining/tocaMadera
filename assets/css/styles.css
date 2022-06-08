@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Hurricane&family=Inspiration&family=Junge&family=Smooch+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 10px;
+}
+
+* a {
+  text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url("../img/header/headerBackground.png");
+  background-position: center center;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (max-width: 615px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+header div img {
+  border-radius: 10%;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  height: 180px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 615px) {
+  header div:nth-child(2) {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+header li {
+  padding: 0px 30px 0px 30px;
+}
+
+@media (max-width: 615px) {
+  header li {
+    min-width: 200px;
+    padding: 0;
+  }
+}
+
+header li:hover #submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation-name: fadein;
+          animation-name: fadein;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  border-left: 1px solid #214E34;
+}
+
+header li div {
+  display: none;
+}
+
+header li div a {
+  padding: 10px;
+}
+
+header a {
+  color: #000000;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+}
+
+header a:hover {
+  border-bottom: 1px solid #214E34;
+}
+
+.burgerBtn {
+  display: none;
+}
+
+@media (max-width: 615px) {
+  .burgerBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    color: #D9DBD9;
+    font-size: 1.5rem;
+    background-image: url("../img/header/wood2.jpg");
+  }
+}
+
+.showMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+@media (max-width: 615px) {
+  .hideMenu {
+    display: none;
+  }
+}
+
+main {
+  background-color: #E6BE8A;
+}
+
+.carouselHeight {
+  height: 370px;
+}
+
+footer {
+  background-color: #214E34;
+}
+/*# sourceMappingURL=styles.css.map */
