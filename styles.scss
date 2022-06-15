@@ -8,7 +8,7 @@ header {
     justify-content: space-around;
     background-image: url("../img/header/headerBackground.png");
     background-position: center center;
-    height: 200px;
+    height: 210px;
     @media (max-width: 768px) {
         justify-content: start;
     }
@@ -54,6 +54,7 @@ header {
         &:hover #submenu  {
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             animation-name: fadein;
             animation-duration: 2s;
             border-left: 1px solid $colorGreen;
@@ -107,7 +108,23 @@ header {
 }
 }
 
-main {
+.home {
+    animation-name: fadeHome;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    display: none;
+}
+.btnHome:hover .home {
+    display: block;
+@keyframes fadeHome {
+    from{transform: translateX(110px); opacity: 0;}
+    to {transform: translateX(-50px); opacity: 1;}
+    
+    }
+}
+
+
+.mainIndex {
     background-color: $colorBrownWood;
 }
 .carouselHeight {
@@ -117,4 +134,37 @@ main {
 footer {
     background-color: $colorGreen;
 }
+.iconsEntrance {
+    animation-name: leftToRight;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes leftToRight {
+    0% {transform: translateX(-1400px); opacity: 0;}
+    100% {transform: translateX(0px); opacity: 1;}
+}
+.spin {
+    animation-name: whirl;
+    animation-duration: 60s;
+}
+@keyframes whirl {
+    from{transform: rotateY(0deg);}
+    to { transform: rotateY(3600deg);}
+}
 
+.mainContacto {
+    background-color: $colorSecundario
+}
+.form-control {
+    font-family: $fontPrimaria;
+    font-size: 2rem;
+}
+.whatsapp {
+border-radius: 50%;
+width: 80px;
+height: 80px;
+&:hover {
+    background-color: $colorGreen
+}
+}

@@ -11,3 +11,14 @@ burguerBoton.addEventListener ("click", function () {
         sidebar.classList.add("hideMenu");
     }
 });
+
+var iconoInsta = document.getElementById("iconoInsta");
+
+iconoInsta.addEventListener("mouseover", function () {
+   iconoInsta.classList.add("spin")
+    });
+var iconoInsta = document.getElementById("iconoFace");
+
+iconoInsta.addEventListener("mouseover", function () {
+   iconoInsta.classList.add("spin")
+    });

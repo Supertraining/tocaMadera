@@ -19,7 +19,7 @@ header {
       justify-content: space-around;
   background-image: url("../img/header/headerBackground.png");
   background-position: center center;
-  height: 200px;
+  height: 210px;
 }
 
 @media (max-width: 768px) {
@@ -129,6 +129,9 @@ header li:hover #submenu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-animation-name: fadein;
           animation-name: fadein;
   -webkit-animation-duration: 2s;
@@ -200,7 +203,47 @@ header a:hover {
   }
 }
 
-main {
+.home {
+  -webkit-animation-name: fadeHome;
+          animation-name: fadeHome;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: none;
+}
+
+.btnHome:hover .home {
+  display: block;
+}
+
+@-webkit-keyframes fadeHome {
+  from {
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeHome {
+  from {
+    -webkit-transform: translateX(110px);
+            transform: translateX(110px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+    opacity: 1;
+  }
+}
+
+.mainIndex {
   background-color: #E6BE8A;
 }
 
@@ -209,6 +252,89 @@ main {
 }
 
 footer {
+  background-color: #214E34;
+}
+
+.iconsEntrance {
+  -webkit-animation-name: leftToRight;
+          animation-name: leftToRight;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(-1400px);
+            transform: translateX(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(-1400px);
+            transform: translateX(-1400px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.spin {
+  -webkit-animation-name: whirl;
+          animation-name: whirl;
+  -webkit-animation-duration: 60s;
+          animation-duration: 60s;
+}
+
+@-webkit-keyframes whirl {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+@keyframes whirl {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(3600deg);
+            transform: rotateY(3600deg);
+  }
+}
+
+.mainContacto {
+  background-color: #000000;
+}
+
+.form-control {
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+}
+
+.whatsapp {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.whatsapp:hover {
   background-color: #214E34;
 }
 /*# sourceMappingURL=styles.css.map */
