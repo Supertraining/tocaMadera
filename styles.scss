@@ -162,9 +162,18 @@ footer {
 }
 .whatsapp {
 border-radius: 50%;
-width: 80px;
-height: 80px;
+width: 76px;
+height: 76px;
+animation-name: wapLight;
+animation-iteration-count: infinite;
+animation-duration: 6s;
+
+@keyframes wapLight {
+    0% {background-color: transparent; opacity: 1;}
+    50% {background-color: #25D366; opacity: 0;}
+    100% {background-color: transparent; opacity: 1;}
+}
 &:hover {
-    background-color: $colorGreen
+
 }
 }

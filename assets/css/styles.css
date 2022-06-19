@@ -330,11 +330,43 @@ footer {
 
 .whatsapp {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 76px;
+  height: 76px;
+  -webkit-animation-name: wapLight;
+          animation-name: wapLight;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
-.whatsapp:hover {
-  background-color: #214E34;
+@-webkit-keyframes wapLight {
+  0% {
+    background-color: transparent;
+    opacity: 1;
+  }
+  50% {
+    background-color: #25D366;
+    opacity: 0;
+  }
+  100% {
+    background-color: transparent;
+    opacity: 1;
+  }
+}
+
+@keyframes wapLight {
+  0% {
+    background-color: transparent;
+    opacity: 1;
+  }
+  50% {
+    background-color: #25D366;
+    opacity: 0;
+  }
+  100% {
+    background-color: transparent;
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
