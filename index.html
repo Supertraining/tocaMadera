@@ -31,56 +31,102 @@
       </div>
     </header>
 
-    <main class="row d-flex align-items-center justify-content-center mainIndex">
-      <div id="carouselExampleIndicators" class="carousel slide  col-xl-6 col-lg-8 col-md-8 col-sm-9 col-12" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    <main class="row d-flex align-items-center justify-content-center">
+      <div class = "carouselBgColor d-flex align-items-center justify-content-center p-5">
+        <div id="carouselExampleIndicators" class="carousel slide  col-xl-6 col-lg-8 col-md-8 col-sm-9 col-12" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner carouselHeight col-lg-6">
+            <div class="carousel-item active h-100">
+              <img src="./assets/img/slides/portada.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/cocina1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/cocina.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/mesa.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/muebleVanitory.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/muebleZapatos.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner carouselHeight col-lg-6">
-          <div class="carousel-item active h-100">
-            <img src="./assets/img/slides/portada.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-          <div class="carousel-item h-100">
-            <img src="./assets/img/slides/cocina1.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-          <div class="carousel-item h-100">
-            <img src="./assets/img/slides/cocina.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-          <div class="carousel-item h-100">
-            <img src="./assets/img/slides/mesa.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-          <div class="carousel-item h-100">
-            <img src="./assets/img/slides/muebleVanitory.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-          <div class="carousel-item h-100">
-            <img src="./assets/img/slides/muebleZapatos.jpg" class="d-block w-100 h-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="mainContacto row col-xl-10 my-5 justify-content-center">
+        <form class="row align-items-center">
+            <div class="row my-5">
+                <div class="col">
+                    <input type="text"
+                        class="form-control"
+                        placeholder="Nombre">
+                </div>
+                <div class="col">
+                    <input type="text"
+                        class="form-control"
+                        placeholder="Apellido">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col">
+                    <input type="email"
+                        class="form-control"
+                        placeholder="Mail@hosting">
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col">
+                    <textarea class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="2"
+                        placeholder="Ingrese su comentario"></textarea>
+                </div>
+            </div>
+            <div class="row my-5 justify-content-center">
+                <div class="col-xl-2">
+                    <input type="submit" class="form-control">
+                </div>
+            </div>
+        </form>
       </div>
     </main>
 
-    <footer class="row d-flex justify-content-end">
-      <div class="w-auto m-2 iconsEntrance" id="iconoInsta"><a href="">
+    <footer class="row" id="pie">
+      <div class = "d-flex justify-content-center mt-5">
+      
+        <div class="whatsapp d-flex justify-content-center align-items-center">
+          <a href="" class="my-3 w-auto"><img src="./assets/img/social/whatsapp96x96.webp" alt=""></a>
+        </div>
+      </div>
+      <div class = "d-flex justify-content-center">
+      <div class="w-auto mx-4" id="iconoInsta"><a href="">
               <img src="./assets/img/social/instagram-48.png"
                   alt=""></a>
       </div>
-      <div class="w-auto m-2 iconsEntrance" id="iconoFace"><a href="">
+      <div class="w-auto mx-4" id="iconoFace"><a href="">
               <img src="./assets/img/social/facebook-wood-48.png"
                   alt=""></a>
       </div>
+    </div>
   </footer>
 
 

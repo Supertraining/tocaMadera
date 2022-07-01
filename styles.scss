@@ -9,6 +9,9 @@ header {
     background-image: url("../img/header/headerBackground.png");
     background-position: center center;
     height: 210px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
     @media (max-width: 768px) {
         justify-content: start;
     }
@@ -124,7 +127,7 @@ header {
 }
 
 
-.mainIndex {
+.carouselBgColor {
     background-color: $colorBrownWood;
 }
 .carouselHeight {
@@ -132,7 +135,21 @@ header {
 }
 
 footer {
-    background-color: $colorGreen;
+    background-image: url("../img/slides/portada.jpg");
+    background-position: center center;
+    // background-size: cover;
+    
+}
+.footerAnimation {
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    @keyframes grow {
+        from{height: 158px;}
+        to {height: 420px}
+    }
+
 }
 .iconsEntrance {
     animation-name: leftToRight;
@@ -154,7 +171,7 @@ footer {
 }
 
 .mainContacto {
-    background-color: $colorSecundario
+    background-color: $colorGreen;
 }
 .form-control {
     font-family: $fontPrimaria;
@@ -174,6 +191,7 @@ animation-duration: 6s;
     100% {background-color: transparent; opacity: 1;}
 }
 &:hover {
-
+animation: none;
+background-color: #25d36598
 }
 }
