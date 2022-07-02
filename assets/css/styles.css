@@ -148,46 +148,69 @@ header a:hover {
     display: none;
   }
 }
-.home {
-  -webkit-animation-name: fadeHome;
-          animation-name: fadeHome;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  display: none;
-}
-
-.btnHome:hover .home {
-  display: block;
-}
-@-webkit-keyframes fadeHome {
-  from {
-    transform: translateX(110px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(-50px);
-    opacity: 1;
-  }
-}
-@keyframes fadeHome {
-  from {
-    transform: translateX(110px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(-50px);
-    opacity: 1;
-  }
-}
-
 .carouselBgColor {
   background-color: #E6BE8A;
 }
 
 .carouselHeight {
   height: 370px;
+}
+
+p {
+  color: #000000;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  margin-top: 20px;
+  background-image: url(../img/wood-pattern.png);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  -webkit-animation-name: fadeInParrafo;
+          animation-name: fadeInParrafo;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  background-color: #FFF8E7;
+  border-radius: 2%;
+}
+@-webkit-keyframes fadeInParrafo {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes fadeInParrafo {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.mainContacto {
+  background-color: #D9DBD9;
+  margin: 100px 0px 200px 0px;
+}
+@media (min-width: 576px) {
+  .mainContacto {
+    margin: 50px 0px 50px 0px;
+  }
+}
+
+.form-control {
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
 }
 
 footer {
@@ -208,7 +231,7 @@ footer {
     height: 158px;
   }
   to {
-    height: 420px;
+    height: 225px;
   }
 }
 @keyframes grow {
@@ -216,7 +239,61 @@ footer {
     height: 158px;
   }
   to {
-    height: 420px;
+    height: 225px;
+  }
+}
+@media (min-width: 576px) {
+  @-webkit-keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 365px;
+    }
+  }
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 365px;
+    }
+  }
+}
+@media (min-width: 616px) {
+  @-webkit-keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 340px;
+    }
+  }
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 340px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  @-webkit-keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 420px;
+    }
+  }
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 420px;
+    }
   }
 }
 
@@ -274,19 +351,10 @@ footer {
     transform: rotateY(3600deg);
   }
 }
-.mainContacto {
-  background-color: #214E34;
-}
-
-.form-control {
-  font-family: "Dosis", sans-serif;
-  font-size: 2rem;
-}
-
 .whatsapp {
   border-radius: 50%;
-  width: 76px;
-  height: 76px;
+  width: 46px;
+  height: 46px;
   -webkit-animation-name: wapLight;
           animation-name: wapLight;
   -webkit-animation-iteration-count: infinite;
@@ -326,4 +394,9 @@ footer {
   -webkit-animation: none;
           animation: none;
   background-color: rgba(37, 211, 101, 0.5960784314);
+}
+
+.divSocialIcons {
+  height: 50px;
+  margin-top: 50px;
 }/*# sourceMappingURL=styles.css.map */

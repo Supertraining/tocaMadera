@@ -26,14 +26,13 @@
                     <a href="#">Placares</a>
                 </div>
             </li>
-            <li><a href="./assets/pages/contacto.html">Contacto</a></li>
         </ul>
       </div>
     </header>
 
     <main class="row d-flex align-items-center justify-content-center">
       <div class = "carouselBgColor d-flex align-items-center justify-content-center p-5">
-        <div id="carouselExampleIndicators" class="carousel slide  col-xl-6 col-lg-8 col-md-8 col-sm-9 col-12" data-bs-ride="true">
+        <div id="carouselExampleIndicators" class="carousel slide  col-xl-8 col-lg-10 col-md-10 col-sm-11 col-12" data-bs-ride="true">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -62,40 +61,44 @@
               <img src="./assets/img/slides/muebleZapatos.jpg" class="d-block w-100 h-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </div>
-      <div class="mainContacto row col-xl-10 my-5 justify-content-center">
+      <div class = "row d-flex justify-content-center">
+        <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 mt-5 mx-3" id="divParrafo" >
+          <p class ="shadow hide p-3" id="parrafo">Somos una mueblería boutique. Realizamos muebles a medida. Para mas información o presupuestos puede completar el formulario, enviarnos un msj por WhatsApp o contactarnos a través de nuestras redes sociales</p>
+        </div>
+        <div class="mainContacto rounded row col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 justify-content-center">
         <form class="row align-items-center">
             <div class="row my-5">
                 <div class="col">
                     <input type="text"
-                        class="form-control"
+                        class="form-control text-dark fw-bolder"
                         placeholder="Nombre">
                 </div>
                 <div class="col">
                     <input type="text"
-                        class="form-control"
+                        class="form-control text-dark fw-bolder"
                         placeholder="Apellido">
                 </div>
             </div>
             <div class="row my-3">
                 <div class="col">
                     <input type="email"
-                        class="form-control"
+                        class="form-control text-dark fw-bolder"
                         placeholder="Mail@hosting">
                 </div>
             </div>
             <div class="row my-5">
                 <div class="col">
-                    <textarea class="form-control"
+                    <textarea class="form-control text-dark"
                         id="exampleFormControlTextarea1"
                         rows="2"
                         placeholder="Ingrese su comentario"></textarea>
@@ -107,31 +110,31 @@
                 </div>
             </div>
         </form>
+        </div>
       </div>
+
     </main>
 
     <footer class="row" id="pie">
-      <div class = "d-flex justify-content-center mt-5">
-      
-        <div class="whatsapp d-flex justify-content-center align-items-center">
-          <a href="" class="my-3 w-auto"><img src="./assets/img/social/whatsapp96x96.webp" alt=""></a>
+      <div class = "d-flex justify-content-center divSocialIcons">
+        <div class="whatsapp d-flex justify-content-center align-items-center mx-4" id="iconoWhapp">
+          <a href="" class="my-3 w-auto"><img src="./assets/img/social/whatsapp-48.png" alt=""></a>
         </div>
-      </div>
-      <div class = "d-flex justify-content-center">
-      <div class="w-auto mx-4" id="iconoInsta"><a href="">
-              <img src="./assets/img/social/instagram-48.png"
-                  alt=""></a>
-      </div>
-      <div class="w-auto mx-4" id="iconoFace"><a href="">
-              <img src="./assets/img/social/facebook-wood-48.png"
-                  alt=""></a>
-      </div>
+        <div class="w-auto mx-4" id="iconoInsta"><a href="">
+                <img src="./assets/img/social/instagram-48.png"
+                    alt=""></a>
+        </div>
+        <div class="w-auto mx-4" id="iconoFace"><a href="">
+                <img src="./assets/img/social/facebook-wood-48.png"
+                    alt=""></a>
+        </div>
     </div>
   </footer>
 
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="./assets/tocaMadera.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-</body>
+    <script src="./assets/tocaMadera.js"></script>
+  </body>
 </html>
