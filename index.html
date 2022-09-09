@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body class="container-fluid">
+<body class="container">
 
-    <header class="row">
+    <header class="row" id="header">
         <div class="d-flex justify-content-center col-md-3 col-sm-6 col-6 m-2">
             <img src="./assets/img/logos/logo180x180.jpg" alt="">
         </div>
@@ -31,17 +31,78 @@
     </header>
 
     <main class="row d-flex align-items-center justify-content-center">
-      <div class = "carouselBgColor d-flex align-items-center justify-content-center p-5">
-        <div id="carouselExampleIndicators" class="carousel slide  col-xl-8 col-lg-10 col-md-10 col-sm-11 col-12" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <div class="w-75 border divMainText p-5">
+        <p class="mainText shadow p-3" id="header-show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, at recusandae molestias exercitationem voluptatibus culpa, fugit magni eos animi tempora rerum sed accusantium earum, sapiente ducimus eius veniam repellat aliquam.</p>
+      </div>
+      <div class = "d-flex align-items-center justify-content-center justify-content-lg-start p-0 carouselMargins mt-1" id="car-a-div">
+        <div id="carouselExampleIndicators" class="carousel slide carouselSize" data-bs-ride="true">
+          <div class="carousel-inner carouselHeight col-lg-6" id="car-a-inner">
+            <div class="carousel-item active h-100">
+              <img src="./assets/img/slides/kitchen.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/kitchen1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/kitchen2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/kitchen3.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/kitchen4.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/kitchen5.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
           </div>
-          <div class="carousel-inner carouselHeight col-lg-6">
+          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carouselText border">Cocinas</div>
+        </div>
+      </div>
+      <div class = "d-flex align-items-center justify-content-center justify-content-lg-start p-o carouselMargins" id="car-b-div">
+        <div id="carouselExampleIndicatorsb" class="carousel slide carouselSize" data-bs-ride="true">
+          <div class="carousel-inner carouselHeight col-lg-6" id="car-b-inner">
+            <div class="carousel-item active h-100">
+              <img src="./assets/img/slides/table.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/table1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/table2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/table3.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/table4.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item h-100">
+              <img src="./assets/img/slides/table5.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsb" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsb" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="carouselText border">Mesas</div>
+        </div>
+      </div>
+      <div class = "d-flex align-items-center justify-content-center justify-content-lg-start p-0 mb-5" id="car-c-div">
+        <div id="carouselExampleIndicatorsc" class="carousel slide carouselSize" data-bs-ride="true">
+          <div class="carousel-inner carouselHeight" id="car-c-inner">
             <div class="carousel-item active h-100">
               <img src="./assets/img/slides/portada.jpg" class="d-block w-100 h-100" alt="...">
             </div>
@@ -61,16 +122,18 @@
               <img src="./assets/img/slides/muebleZapatos.jpg" class="d-block w-100 h-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsc" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsc" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
+          <div class="carouselText border">Placares</div>
         </div>
       </div>
+
       <div class = "row d-flex justify-content-center">
         <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 mt-5 mx-3" id="divParrafo" >
           <p class ="shadow hide p-3" id="parrafo">Somos una mueblería boutique. Realizamos muebles a medida. Para mas información o presupuestos puede completar el formulario, enviarnos un msj por WhatsApp o contactarnos a través de nuestras redes sociales</p>
@@ -113,13 +176,14 @@
         </div>
       </div>
 
+      <div class="d-flex justify-content-end align-items-center mx-4 sticky-bottom">
+        <a href="" class="my-3 w-auto"><img class="whatsapp" src="./assets/img/social/whatsappVerde64.png" alt=""></a>
+      </div>
+
     </main>
 
     <footer class="row" id="pie">
       <div class = "d-flex justify-content-center divSocialIcons">
-        <div class="whatsapp d-flex justify-content-center align-items-center mx-4" id="iconoWhapp">
-          <a href="" class="my-3 w-auto"><img src="./assets/img/social/whatsapp-48.png" alt=""></a>
-        </div>
         <div class="w-auto mx-4" id="iconoInsta"><a href="">
                 <img src="./assets/img/social/instagram-48.png"
                     alt=""></a>

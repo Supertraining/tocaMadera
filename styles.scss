@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Hurricane&family=Inspiration&family=Junge&family=Smooch+Sans:wght@300;400&display=swap');
-@import "./reset.scss";
-@import "./variables.scss";
+@import './variables';
+@import './reset';
 
 
 header {
@@ -110,13 +110,90 @@ header {
     display: none;
 }
 }
+
+.headerFadeUp {
+    transform: translateY(-210px);
+    transition: 5s;
+}
+.headerShow {
+    transform: translateY(0px);
+    transition: 5s;
+}
+.divMainText {
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+.mainText {
+    font-size: 2rem;
+    background-image: none;
+}
+
+
 //**CAROUSEL MAIN**//
-.carouselBgColor {
-    background-color: $colorBrownWood;
+.carouselMargins {
+    margin-bottom: 300px;
 }
 .carouselHeight {
-    height: 370px;
+    height: 200px;
+    width: 200px;
+    transition: 5s;
+
+    @media (max-width: 992px) {
+        height: 300px;
+        width: 760px;
+        }
+    @media (max-width: 768px) {
+        height: 265px;
+        width: 580px;
+        }
+    @media (max-width: 576px) {
+        height: 200px;
+        width: 350px;
+        }
+ 
+   
 }
+.carouselSize {
+    height: 200px;
+    width: 200px;
+    transition: 5s;
+    @media (max-width: 992px) {
+        height: 300px;
+        width: 760px;
+    }
+    @media (max-width: 768px) {
+        height: 265px;
+        width: 580px;
+    }
+    @media (max-width: 576px) {
+        height: 200px;
+        width: 350px;
+    }
+   
+}
+.carouselText {
+    text-align: center;
+    font-family: $fontPrimaria;
+    font-size: 2rem;
+    font-weight:500;
+    
+}
+.carouselReSize {
+    @media (min-width: 992px) {
+        height: 580px;
+        width: 100%;
+        transition: 5s;
+        z-index: 10;
+    }
+}
+.carouselReSizeInner {
+    @media (min-width: 992px) {
+        height: 580px;
+        width: 100%;
+        transition: 5s;
+    }
+}
+
 
 //**TEXTO CONTACTO MAIN**//
 p {
@@ -208,25 +285,6 @@ footer {
 @keyframes whirl {
     from{transform: rotateY(0deg);}
     to { transform: rotateY(3600deg);}
-}
-.whatsapp {
-border-radius: 50%;
-width: 46px;
-height: 46px;
-animation-name: wapLight;
-animation-iteration-count: infinite;
-animation-duration: 6s;
-
-
-@keyframes wapLight {
-    0% {background-color: transparent; opacity: 1;}
-    50% {background-color: #25D366; opacity: 0;}
-    100% {background-color: transparent; opacity: 1;}
-}
-&:hover {
-animation: none;
-background-color: #25d36598
-}
 }
 .divSocialIcons {
     height: 50px;

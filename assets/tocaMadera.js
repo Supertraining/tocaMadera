@@ -18,8 +18,8 @@ if (typeof window !== 'undefined') {
   let interval = setInterval(function () {
     initialCountdownVal = initialCountdownVal > 0 ? initialCountdownVal - 1 : 0;
   if (initialCountdownVal < 10 && initialCountdownVal >= 1) {
-      iconoInsta.classList.add("spin");
-      iconoFace.classList.add("spin");
+      insta.classList.add("spin");
+      face.classList.add("spin");
     } else if (initialCountdownVal === 0) {
       clearInterval(interval);
     }
@@ -30,7 +30,6 @@ if (typeof window !== 'undefined') {
   let foot = document.querySelector('footer');
   let insta = document.getElementById("iconoInsta");
   let face = document.getElementById("iconoFace");
-  let whapp = document.getElementById("iconoWhapp")
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {                
@@ -38,7 +37,8 @@ if (typeof window !== 'undefined') {
         entry.target=(foot).classList.add('footerAnimation');
         entry.target=(insta).classList.add('iconsEntrance');
         entry.target=(face).classList.add('iconsEntrance');
-        entry.target=(whapp).classList.add('iconsEntrance');
+        entry.target=(header).classList.add('headerShow');
+
       } else {
         entry.target.classList.remove('footerAnimation')
       }
@@ -46,9 +46,6 @@ if (typeof window !== 'undefined') {
   });
 
   observer.observe(foot);
-  // observer.observe(insta);
-  // observer.observe(face);
-  // observer.observe()
 
   let divParrafo = document.getElementById("divParrafo");
   let parrafo = document.getElementById("parrafo");
@@ -66,5 +63,81 @@ if (typeof window !== 'undefined') {
 
   
   observerP.observe(divParrafo);
-}
 
+  const carouselaDiv = document.getElementById('car-a-div');
+  const carousela = document.getElementById('carouselExampleIndicators');
+  const carouselaInner = document.getElementById('car-a-inner')
+  const header = document.getElementById('header')
+
+ const observeCarA = new IntersectionObserver(entries =>
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target=(carousela).classList.add('carouselReSize')
+      entry.target=(carouselaInner).classList.add('carouselReSizeInner')
+      entry.target=(header).classList.add('headerFadeUp')
+      entry.target=(header).classList.remove('headerShow')
+      entry.target=(carouselb).classList.remove('carouselReSize')
+      entry.target=(carouselbInner).classList.remove('carouselReSizeInner')
+    }
+  }))
+
+  observeCarA.observe(carouselaDiv)
+
+
+
+const mainText = document.getElementById('header-show');
+
+const observeHeader = new IntersectionObserver (entries =>
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target=(header).classList.remove('headerFadeUp');
+      entry.target=(header).classList.add('headerShow');
+      entry.target=(carousela).classList.remove('carouselReSize')
+      entry.target=(carouselaInner).classList.remove('carouselReSizeInner')
+
+    }
+  }))
+
+  observeHeader.observe(mainText)
+
+
+const carouselbDiv = document.getElementById('car-b-div');
+const carouselb = document.getElementById('carouselExampleIndicatorsb');
+const carouselbInner = document.getElementById('car-b-inner')
+
+const observeCarB = new IntersectionObserver(entries =>
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target=(carouselb).classList.add('carouselReSize')
+      entry.target=(carouselbInner).classList.add('carouselReSizeInner')
+      entry.target=(carousela).classList.remove('carouselReSize')
+      entry.target=(carouselaInner).classList.remove('carouselReSizeInner')
+      entry.target=(carouselc).classList.remove('carouselReSize')
+      entry.target=(carouselcInner).classList.remove('carouselReSizeInner')
+
+    }
+  }))
+
+  observeCarB.observe(carouselbDiv)
+
+const carouselcDiv = document.getElementById('car-c-div');
+const carouselc = document.getElementById('carouselExampleIndicatorsc');
+const carouselcInner = document.getElementById('car-c-inner')
+
+const observeCarC = new IntersectionObserver(entries =>
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target=(carouselc).classList.add('carouselReSize')
+      entry.target=(carouselcInner).classList.add('carouselReSizeInner')
+      entry.target=(carouselb).classList.remove('carouselReSize')
+      entry.target=(carouselbInner).classList.remove('carouselReSizeInner')
+      entry.target=(header).classList.remove('headerShow');
+      entry.target=(header).classList.add('headerFadeUp');
+
+
+
+    }
+  }))
+
+  observeCarC.observe(carouselcDiv)
+}
