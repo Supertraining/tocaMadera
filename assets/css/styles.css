@@ -19,15 +19,11 @@ header {
   top: 0px;
   z-index: 1000;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
-    justify-content: start;
-  }
-}
-@media (max-width: 615px) {
-  header {
-    justify-content: center;
-    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
   }
 }
 @media (max-width: 576px) {
@@ -96,11 +92,14 @@ header a {
 header a:hover {
   border-bottom: 1px solid #214E34;
 }
+header div p {
+  background-image: none;
+}
 
 .burgerBtn {
   display: none;
 }
-@media (max-width: 615px) {
+@media (max-width: 767px) {
   .burgerBtn {
     display: flex;
     justify-content: center;
@@ -122,7 +121,7 @@ header a:hover {
   transition: 3s;
 }
 
-@media (max-width: 615px) {
+@media (max-width: 767px) {
   .hideMenu {
     display: none;
   }
@@ -283,7 +282,7 @@ footer {
     height: 158px;
   }
   to {
-    height: 225px;
+    height: 275px;
   }
 }
 @media (min-width: 576px) {
@@ -292,7 +291,7 @@ footer {
       height: 158px;
     }
     to {
-      height: 365px;
+      height: 275px;
     }
   }
 }
@@ -302,11 +301,31 @@ footer {
       height: 158px;
     }
     to {
-      height: 340px;
+      height: 260px;
+    }
+  }
+}
+@media (min-width: 767px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 330px;
     }
   }
 }
 @media (min-width: 1200px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 340px;
+    }
+  }
+}
+@media (min-width: 1350px) {
   @keyframes grow {
     from {
       height: 158px;

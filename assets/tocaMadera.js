@@ -38,7 +38,8 @@ if (typeof window !== 'undefined') {
         entry.target=(insta).classList.add('iconsEntrance');
         entry.target=(face).classList.add('iconsEntrance');
         entry.target=(header).classList.add('headerShow');
-
+        entry.target=(carouselc).classList.remove('carouselReSize')
+        entry.target=(carouselc).classList.remove('carouselReSizeInner')
       } else {
         entry.target.classList.remove('footerAnimation')
       }
@@ -133,11 +134,15 @@ const observeCarC = new IntersectionObserver(entries =>
       entry.target=(carouselbInner).classList.remove('carouselReSizeInner')
       entry.target=(header).classList.remove('headerShow');
       entry.target=(header).classList.add('headerFadeUp');
-
-
-
     }
   }))
 
   observeCarC.observe(carouselcDiv)
 }
+
+
+// const observeForm = new IntersectionObserver(entries => 
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//     }
+//   }))

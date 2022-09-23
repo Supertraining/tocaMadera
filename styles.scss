@@ -12,12 +12,10 @@ header {
     position: sticky;
     top: 0px;
     z-index: 1000;
-    @media (max-width: 768px) {
-        justify-content: start;
-    }
-    @media (max-width: 615px) {
-        justify-content: center;
-        height: fit-content;
+    @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
     @media (max-width: 576px) {
         flex-direction: column;
@@ -83,10 +81,13 @@ header {
             border-bottom: 1px solid $colorGreen;
         }
     }
+    div p {
+        background-image: none;
+    }
 }
 .burgerBtn {
     display: none;
-    @media (max-width: 615px) {
+    @media (max-width: 767px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +106,7 @@ header {
     width: fit-content;
     transition: 3s;
 }
-@media (max-width: 615px){
+@media (max-width: 767px){
 .hideMenu {
     display: none;
 }
@@ -246,21 +247,33 @@ footer {
 
     @keyframes grow {
         from{height: 158px;}
-        to {height: 225px}
+        to {height: 275px}
     }
     @media (min-width: 576px) {
         @keyframes grow {
         from {height: 158px}
-        to {height: 365px}
+        to {height: 275px}
     }
 }
     @media (min-width: 616px) {
         @keyframes grow {
         from {height: 158px}
-        to {height: 340px}
+        to {height: 260px}
+    }
+}    
+    @media (min-width: 767px) {
+        @keyframes grow {
+        from {height: 158px}
+        to {height: 330px}
     }
 }    
     @media (min-width: 1200px) {
+        @keyframes grow {
+        from {height: 158px}
+        to {height: 340px}
+    }
+}
+    @media (min-width: 1350px) {
         @keyframes grow {
         from {height: 158px}
         to {height: 420px}
