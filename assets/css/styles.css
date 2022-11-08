@@ -128,17 +128,17 @@ header div p {
 }
 .headerFadeUp {
   transform: translateY(-210px);
-  transition: 5s;
+  transition: 3s;
 }
 
 .headerShow {
   transform: translateY(0px);
-  transition: 5s;
+  transition: 3s;
 }
 
 .divMainText {
   margin-top: 100px;
-  margin-bottom: 250px;
+  margin-bottom: 400px;
 }
 
 .mainText {
@@ -147,7 +147,7 @@ header div p {
 }
 
 .carouselMargins {
-  margin-bottom: 300px;
+  margin-bottom: 500px;
 }
 
 .carouselHeight {
