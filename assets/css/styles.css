@@ -1,109 +1,371 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400&family=Hurricane&family=Inspiration&family=Junge&family=Smooch+Sans:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+* a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("../img/header/headerBackground.png");
+  background-position: center center;
+  height: 210px;
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+header div img {
+  border-radius: 10%;
+  animation-name: fadein;
+  animation-duration: 2s;
+  height: 180px;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 615px) {
+  header div:nth-child(2) {
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: start !important;
+  }
+}
+header ul {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+  animation-name: fadein;
+  animation-duration: 2s;
+  height: fit-content;
+}
+header li {
+  padding: 0px 30px 0px 30px;
+}
+@media (max-width: 615px) {
+  header li {
+    min-width: 200px;
+    padding: 0;
+  }
+}
+header li:hover #submenu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  animation-name: fadein;
+  animation-duration: 2s;
+  border-left: 1px solid #214E34;
+}
+header li div {
+  display: none;
+}
+header li div a {
+  padding: 10px;
+}
+header a {
+  color: #000000;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+}
+header a:hover {
+  border-bottom: 1px solid #214E34;
+}
+header div p {
+  background-image: none;
+}
+
+.burgerBtn {
+  display: none;
+}
+@media (max-width: 767px) {
+  .burgerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+    color: #D9DBD9;
+    font-size: 1.5rem;
+    background-image: url("../img/header/wood2.jpg");
+  }
+}
+
+.showMenu {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  transition: 3s;
+}
+
+@media (max-width: 767px) {
+  .hideMenu {
+    display: none;
+  }
+}
+.headerFadeUp {
+  transform: translateY(-210px);
+  transition: 3s;
+}
+
+.headerShow {
+  transform: translateY(0px);
+  transition: 3s;
+}
+
+.divMainText {
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+.mainText {
+  font-size: 2rem;
+  background-image: none;
+}
+
+.carouselMargins {
+  margin-bottom: 500px;
+}
+
+.carouselHeight {
+  height: 200px;
+  width: 200px;
+  transition: 5s;
+}
+@media (max-width: 992px) {
+  .carouselHeight {
+    height: 300px;
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .carouselHeight {
+    height: 265px;
+    width: 580px;
+  }
+}
+@media (max-width: 576px) {
+  .carouselHeight {
+    height: 200px;
+    width: 350px;
+  }
+}
+
+.carouselSize {
+  height: 200px;
+  width: 200px;
+  transition: 5s;
+}
+@media (max-width: 992px) {
+  .carouselSize {
+    height: 300px;
+    width: 760px;
+  }
+}
+@media (max-width: 768px) {
+  .carouselSize {
+    height: 265px;
+    width: 580px;
+  }
+}
+@media (max-width: 576px) {
+  .carouselSize {
+    height: 200px;
+    width: 350px;
+  }
+}
+
+.carouselText {
+  text-align: center;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .carouselReSize {
+    height: 580px;
+    width: 100%;
+    transition: 5s;
+    z-index: 10;
+  }
+}
+
+@media (min-width: 992px) {
+  .carouselReSizeInner {
+    height: 580px;
+    width: 100%;
+    transition: 5s;
+  }
+}
+
+p {
+  color: #000000;
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+  margin-top: 20px;
+  background-image: url(../img/wood-pattern.png);
+}
+
 .hide {
   display: none;
 }
 
 .show {
-  display: inline-block;
+  display: block;
+  animation-name: fadeInParrafo;
+  animation-duration: 5s;
+  background-color: #FFF8E7;
+  border-radius: 2%;
 }
-
-.carousel-item img {
-  height: 465px;
-}
-@media (max-width: 991px) {
-  .carousel-item img {
-    height: 380px;
+@keyframes fadeInParrafo {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
   }
-}
-
-.jumbotron__Text h2 {
-  font-family: "Roboto Slab", serif;
-}
-.jumbotron__Text p {
-  font-family: "Roboto Slab", serif;
-}
-.jumbotron__Text a {
-  font-family: "Roboto Slab", serif;
-}
-
-figure {
-  animation-name: tilt;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-}
-@keyframes tilt {
-  0% {
+  to {
     opacity: 1;
+    transform: scale(1);
   }
-  25% {
-    opacity: 0.75;
+}
+
+.mainContacto {
+  background-color: #D9DBD9;
+  margin: 100px 0px 200px 0px;
+}
+@media (min-width: 576px) {
+  .mainContacto {
+    margin: 50px 0px 50px 0px;
   }
-  50% {
-    opacity: 0.3;
+}
+
+.form-control {
+  font-family: "Dosis", sans-serif;
+  font-size: 2rem;
+}
+
+footer {
+  background-image: url("../img/slides/portada.jpg");
+  background-position: center center;
+}
+
+.footerAnimation {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes grow {
+  from {
+    height: 158px;
   }
-  75% {
-    opacity: 0.75;
+  to {
+    height: 275px;
+  }
+}
+@media (min-width: 576px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 275px;
+    }
+  }
+}
+@media (min-width: 616px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 260px;
+    }
+  }
+}
+@media (min-width: 767px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 330px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 340px;
+    }
+  }
+}
+@media (min-width: 1350px) {
+  @keyframes grow {
+    from {
+      height: 158px;
+    }
+    to {
+      height: 420px;
+    }
+  }
+}
+
+.iconsEntrance {
+  animation-name: leftToRight;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftToRight {
+  0% {
+    transform: translateX(-1400px);
+    opacity: 0;
   }
   100% {
+    transform: translateX(0px);
     opacity: 1;
   }
 }
-figure:hover {
-  animation: none;
+.spin {
+  animation-name: whirl;
+  animation-duration: 60s;
 }
 
-.Div__logo {
-  min-width: 200px;
-  max-width: 200px;
-}
-.Div__logo p {
-  font-family: "Roboto Slab", serif;
-}
-
-.copyright {
-  font-size: 0.5rem;
-}
-
-footer ul li {
-  font-family: "Roboto Slab", serif;
-}
-
-.textoPrincipal {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.5rem;
-}
-@media (max-width: 767px) {
-  .textoPrincipal {
-    font-size: 1.3rem;
+@keyframes whirl {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(3600deg);
   }
 }
-@media (max-width: 576px) {
-  .textoPrincipal {
-    font-size: 1rem;
-  }
-}
-
-.whapp:hover {
-  background-color: #41c352;
-}
-
-form div textarea {
-  height: 100px;
-}
-
-@media (max-width: 576px) {
-  .input-group {
-    display: flex;
-    flex-direction: column;
-  }
-  textarea {
-    width: 100% !important;
-  }
-}
-.ofertas {
-  font-family: "Roboto Slab", serif;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: transparent !important;
+.divSocialIcons {
+  height: 50px;
+  margin-top: 50px;
 }/*# sourceMappingURL=styles.css.map */
