@@ -1,207 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tocaMadera</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+  <title>Toca Madera</title>
+
+  <link rel="apple-touch-icon"
+    sizes="180x180"
+    href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="./assets/favicon/favicon-16x16.png">
+  <link rel="manifest"
+    href="./assets/favicon/site.webmanifest">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="./assets/css/styles.css">
 </head>
+
 <body class="container">
 
-    <header class="row" id="header">
-        <div class="d-flex flex-column bg-dark border rounded h-50 mt-5 align-items-center col-xl-2 col-md-3 col-sm-6 col-6 m-2">
-          <div>
-              <img style="width: 64px; height: 64px;" src="./assets/img/logos/caja-de-herramientasx64.png" alt="">
-          </div>
-          <p class="m-1 text-white">Carpinteria boutique</p>
-        </div>
-        <div class="d-flex flex-sm-column col-lg-6 col-md-6 col-sm-5 col-6">
-        <button class="burgerBtn" id="burgerBoton">Menu</button>
-        <ul id="sidebar" class="hideMenu">
-            <li><a href="#">Nuestra Empresa</a></li>
-            <li><a>Productos</a>
-                <div id="submenu">
-                    <a href="#car-a-div">Cocinas</a>
-                    <a href="#car-b-div">Mesas</a>
-                    <a href="#car-c-div">Placares</a>
-                </div>
-            </li>
-        </ul>
+  <header class="row"
+    id="header">
+    <div
+      class="d-flex flex-column bg-dark border rounded h-50 mt-5 align-items-center col-xl-2 col-md-3 col-sm-6 col-6 m-2">
+      <div>
+        <img style="width: 64px; height: 64px;"
+          src="./assets/img/logos/caja-de-herramientasx64.png"
+          alt="">
       </div>
-    </header>
+      <p class="m-1 text-white">Carpinteria boutique</p>
+    </div>
+    <div class="d-flex flex-sm-column col-lg-6 col-md-6 col-sm-5 col-6">
+      <button class="burgerBtn"
+        id="burgerBoton">Menu</button>
+      <ul id="sidebar"
+        class="hideMenu">
+        <li><a href="#">Nuestra Empresa</a></li>
+        <li><a>Productos</a>
+          <div id="submenu">
+            <a href="#car-a-div">Cocinas</a>
+            <a href="#car-b-div">Mesas</a>
+            <a href="#car-c-div">Placares</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </header>
 
-    <main class="row d-flex align-items-center justify-content-center">
-      <div class="w-75 border divMainText p-5">
-        <p class="mainText shadow p-3" id="header-show">Somos una carpintería boutique, realizamos muebles a medida con diseños modernos y materiales de alta calidad. Si buscas algo único y que se adapte perfectamente a tu espacio y necesidades, estás en el lugar indicado.</p>
-      </div>
-      <div class = "d-flex align-items-center justify-content-center justify-content-lg-start p-0 carouselMargins mt-1" id="car-a-div">
-        <div id="carouselExampleIndicators" class="carousel slide carouselSize" data-bs-ride="true">
-          <div class="carousel-inner carouselHeight col-lg-6" id="car-a-inner">
-            <div class="carousel-item active h-100">
-              <img src="./assets/img/slides/kitchen.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/kitchen1.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/kitchen2.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/kitchen3.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/kitchen4.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/kitchen5.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
+  <main class="row d-flex align-items-center justify-content-center">
+    <div class="w-75 border divMainText p-5">
+      <p class="mainText shadow p-3"
+        id="header-show">Somos una carpintería boutique, realizamos muebles a medida con diseños modernos y materiales
+        de alta calidad. Si buscas algo único y que se adapte perfectamente a tu espacio y necesidades, estás en el
+        lugar indicado.</p>
+    </div>
+    <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-0 carouselMargins mt-1"
+      id="car-a-div">
+      <div id="carouselExampleIndicators"
+        class="carousel slide carouselSize"
+        data-bs-ride="true">
+        <div class="carousel-inner carouselHeight col-lg-6"
+          id="car-a-inner">
+          <div class="carousel-item active h-100">
+            <img src="./assets/img/slides/kitchen.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
           </div>
-          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carouselText border">Cocinas</div>
-        </div>
-      </div>
-      <div class = "d-flex align-items-center justify-content-center justify-content-lg-start p-o carouselMargins" id="car-b-div">
-        <div id="carouselExampleIndicatorsb" class="carousel slide carouselSize" data-bs-ride="true">
-          <div class="carousel-inner carouselHeight col-lg-6" id="car-b-inner">
-            <div class="carousel-item active h-100">
-              <img src="./assets/img/slides/table.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/table1.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/table2.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/table3.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/table4.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/table5.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/kitchen1.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
           </div>
-          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsb" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsb" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carouselText border">Mesas</div>
-        </div>
-      </div>
-      <div class = "d-flex align-items-center justify-content-center justify-content-lg-start p-0 carouselMargins" id="car-c-div">
-        <div id="carouselExampleIndicatorsc" class="carousel slide carouselSize" data-bs-ride="true">
-          <div class="carousel-inner carouselHeight" id="car-c-inner">
-            <div class="carousel-item active h-100">
-              <img src="./assets/img/slides/Placard.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/placard1.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/placard2.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/placard3.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/placard4.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
-            <div class="carousel-item h-100">
-              <img src="./assets/img/slides/placard5.jpg" class="d-block w-100 h-100" alt="...">
-            </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/kitchen2.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
           </div>
-          <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsc" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next bg-dark" type="button" data-bs-target="#carouselExampleIndicatorsc" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <div class="carouselText border">Placares</div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/kitchen3.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/kitchen4.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/kitchen5.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
         </div>
+        <button class="carousel-control-prev bg-dark"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next bg-dark"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carouselText border">Cocinas</div>
       </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-o carouselMargins"
+      id="car-b-div">
+      <div id="carouselExampleIndicatorsb"
+        class="carousel slide carouselSize"
+        data-bs-ride="true">
+        <div class="carousel-inner carouselHeight col-lg-6"
+          id="car-b-inner">
+          <div class="carousel-item active h-100">
+            <img src="./assets/img/slides/table.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/table1.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/table2.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/table3.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/table4.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/table5.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev bg-dark"
+          type="button"
+          data-bs-target="#carouselExampleIndicatorsb"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next bg-dark"
+          type="button"
+          data-bs-target="#carouselExampleIndicatorsb"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carouselText border">Mesas</div>
+      </div>
+    </div>
+    <div class="d-flex align-items-center justify-content-center justify-content-lg-start p-0 carouselMargins"
+      id="car-c-div">
+      <div id="carouselExampleIndicatorsc"
+        class="carousel slide carouselSize"
+        data-bs-ride="true">
+        <div class="carousel-inner carouselHeight"
+          id="car-c-inner">
+          <div class="carousel-item active h-100">
+            <img src="./assets/img/slides/Placard.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/placard1.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/placard2.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/placard3.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/placard4.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+          <div class="carousel-item h-100">
+            <img src="./assets/img/slides/placard5.jpg"
+              class="d-block w-100 h-100"
+              alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev bg-dark"
+          type="button"
+          data-bs-target="#carouselExampleIndicatorsc"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next bg-dark"
+          type="button"
+          data-bs-target="#carouselExampleIndicatorsc"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carouselText border">Placares</div>
+      </div>
+    </div>
 
-      <div class = "row d-flex justify-content-center">
-        <div class = "col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 mt-5 mx-3" id="divParrafo" >
-          <p class ="shadow hide p-3" id="parrafo">Para mas información o presupuestos puede completar el formulario, enviarnos un msj por WhatsApp o contactarnos a través de nuestras redes sociales</p>
-        </div>
-        <div class="mainContacto rounded row col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 justify-content-center" id="form">
+    <div class="row d-flex justify-content-center">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-10 col-10 mt-5 mx-3"
+        id="divParrafo">
+        <p class="shadow hide p-3"
+          id="parrafo">Para mas información o presupuestos puede completar el formulario, enviarnos un msj por WhatsApp
+          o contactarnos a través de nuestras redes sociales</p>
+      </div>
+      <div class="mainContacto rounded row col-xl-6 col-lg-6 col-md-6 col-sm-10 col-10 justify-content-center"
+        id="form">
         <form class="row align-items-center">
-            <div class="row my-5">
-                <div class="col">
-                    <input type="text"
-                        class="form-control text-dark fw-bolder"
-                        placeholder="Nombre">
-                </div>
-                <div class="col">
-                    <input type="text"
-                        class="form-control text-dark fw-bolder"
-                        placeholder="Apellido">
-                </div>
+          <div class="row my-5">
+            <div class="col">
+              <input type="text"
+                class="form-control text-dark fw-bolder"
+                placeholder="Nombre">
             </div>
-            <div class="row my-3">
-                <div class="col">
-                    <input type="email"
-                        class="form-control text-dark fw-bolder"
-                        placeholder="Mail@hosting">
-                </div>
+            <div class="col">
+              <input type="text"
+                class="form-control text-dark fw-bolder"
+                placeholder="Apellido">
             </div>
-            <div class="row my-5">
-                <div class="col">
-                    <textarea class="form-control text-dark"
-                        id="exampleFormControlTextarea1"
-                        rows="2"
-                        placeholder="Ingrese su comentario"></textarea>
-                </div>
+          </div>
+          <div class="row my-3">
+            <div class="col">
+              <input type="email"
+                class="form-control text-dark fw-bolder"
+                placeholder="Mail@hosting">
             </div>
-            <div class="row my-5 justify-content-center">
-                <div class="col-xl-2">
-                    <input type="submit" class="form-control">
-                </div>
+          </div>
+          <div class="row my-5">
+            <div class="col">
+              <textarea class="form-control text-dark"
+                id="exampleFormControlTextarea1"
+                rows="2"
+                placeholder="Ingrese su comentario"></textarea>
             </div>
+          </div>
+          <div class="row my-5 justify-content-center">
+            <div class="col-xl-2">
+              <input type="submit"
+                class="form-control">
+            </div>
+          </div>
         </form>
-        </div>
       </div>
+    </div>
 
-      <div class="d-flex justify-content-end align-items-center mx-4 sticky-bottom">
-        <a href="" class="my-3 w-auto"><img class="whatsapp" src="./assets/img/social/whatsappVerde64.png" alt=""></a>
+    <div class="d-flex justify-content-end align-items-center mx-4 sticky-bottom">
+      <a href=""
+        class="my-3 w-auto"><img class="whatsapp"
+          src="./assets/img/social/whatsappVerde64.png"
+          alt=""></a>
+    </div>
+
+  </main>
+
+  <footer class="row"
+    id="pie">
+    <div class="d-flex justify-content-center divSocialIcons">
+      <div class="w-auto mx-4"
+        id="iconoInsta"><a href="">
+          <img src="./assets/img/social/instagram-48.png"
+            alt=""></a>
       </div>
-
-    </main>
-
-    <footer class="row" id="pie">
-      <div class = "d-flex justify-content-center divSocialIcons">
-        <div class="w-auto mx-4" id="iconoInsta"><a href="">
-                <img src="./assets/img/social/instagram-48.png"
-                    alt=""></a>
-        </div>
-        <div class="w-auto mx-4" id="iconoFace"><a href="">
-                <img src="./assets/img/social/facebook-wood-48.png"
-                    alt=""></a>
-        </div>
+      <div class="w-auto mx-4"
+        id="iconoFace"><a href="">
+          <img src="./assets/img/social/facebook-wood-48.png"
+            alt=""></a>
+      </div>
     </div>
   </footer>
 
 
-    <!-- JavaScript Bundle with Popper -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
-    <script src="./assets/js//tocaMadera.js"></script>
-  </body>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js//tocaMadera.js"></script>
+</body>
+
 </html>
